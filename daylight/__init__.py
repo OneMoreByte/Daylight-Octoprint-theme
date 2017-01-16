@@ -50,11 +50,11 @@ class DaylightPlugin(octoprint.plugin.SettingsPlugin,
 				# version check: github repository
 				type="github_release",
 				user="onemorebyte",
-				repo="DayLight",
+				repo="Daylight-Octoprint-theme",
 				current=self._plugin_version,
 
 				# update method: pip
-				pip="https://github.com/onemorebyte/DayLight/archive/{target_version}.zip"
+				pip="https://github.com/OneMoreByte/Daylight-Octoprint-theme/archive/{target_version}.zip"
 			)
 		)
 
