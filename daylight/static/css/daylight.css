@@ -1,1 +1,28 @@
-/* TODO: Have your plugin's CSS files generated to here. */
+
+#navbar .navbar-inner {
+  background-image: none;
+  background-color: #263238;
+}
+
+#navbar .navbar-inner .brand, #navbar .navbar-inner .nav>li>a {
+    text-shadow: none;
+    color: #FFC107;
+}
+
+#navbar .navbar-inner .nav>li>div>p, #navbar .navbar-inner .nav>li>p {
+    color: #FFC107;
+}
+
+#navbar .navbar-inner .brand span {
+    background-image: none;
+}
+.navbar-fixed-top .navbar-inner, .navbar-static-top .navbar-inner {
+    border-width: 0 0 0px;
+}
+
+#navbar .navbar-inner .nav li.dropdown.active>.dropdown-toggle, #navbar .navbar-inner .nav li.dropdown.open.active>.dropdown-toggle, #navbar .navbar-inner .nav li.dropdown.open>.dropdown-toggle {
+    background-color: #B2D1D8;
+    background-image: none;
+    background-repeat: repeat-x;
+    filter: none;
+}

@@ -17,6 +17,9 @@ class DaylightPlugin(octoprint.plugin.SettingsPlugin,
 
 	##~~ SettingsPlugin mixin
 
+    def on_after_startup(self):
+        self._logger.info("Hey, I'm actually here")
+
 	def get_settings_defaults(self):
 		return dict(
 			# put your plugin's default settings here
@@ -65,8 +68,9 @@ def __plugin_load__():
 	global __plugin_implementation__
 	__plugin_implementation__ = DaylightPlugin()
 
+
+
 	global __plugin_hooks__
 	__plugin_hooks__ = {
 		"octoprint.plugin.softwareupdate.check_config": __plugin_implementation__.get_update_information
 	}
-
